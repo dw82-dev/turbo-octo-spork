@@ -1,0 +1,432 @@
+* {
+  box-sizing: border-box;
+}
+
+/* background image for all pages */
+html {
+  background: url("../images/background.jpg") no-repeat center center fixed;
+  background-size: cover;
+}
+
+body {
+  margin: 0;
+  font-family: Arial;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* standard wrapper all pages */
+.wrapper {
+  flex: 95%;
+  max-width: 95%;
+  padding: 20px;
+}
+
+/* Style the top navigation bar */
+.navbar {
+  display: flex;
+  border-radius: 10px;
+  background-color: #333;
+  margin-bottom: 15px;
+}
+
+/* Style the navigation bar links */
+.navbar a {
+  color: white;
+  padding: 14px 20px;
+  text-decoration: none;
+  text-align: center;
+}
+
+/* Change color on hover */
+.navbar a:hover {
+  background-color: #ddd;
+  color: black;
+  border-radius: 10px;
+  transition: 1s;
+}
+
+/* active colour change on current page navbar */
+#active {
+  background-color: #00ff59;
+  border-radius: 10px;
+}
+
+/* standard header for all sub pages */
+.header {
+  flex: 100%;
+  max-width: 100%;
+  position: relative;
+  color: #ddd;
+}
+
+
+.title {
+  position: absolute;
+  bottom: 5%;
+  left: 10%;
+}
+
+/* standard flexbox row for all pages */
+.row {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* gallery column layout */
+.column {
+  flex: 25%;
+  max-width: 25%;
+  padding: 12px;
+}
+
+/* home column layout */
+.home-column {
+  position: relative;
+  flex: 33.33%;
+  max-width: 33.33%;
+  padding: 30px;
+}
+
+/* image properties */
+.home-column img {
+  border-radius: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
+}
+
+/* title text on landing page */
+.text-left {
+  position: absolute;
+  bottom: 80px;
+  left: 60px;
+  width: 100%;
+}
+
+/* title text on landing page */
+.text-left h1, .text-right h1 {
+  line-height: 8px;
+  color: white;
+  font-size: 2vw;
+}
+
+/* title text on landing page */
+.text-right {
+  position: absolute;
+  bottom: 80px;
+  right: 60px;
+  text-align: right;
+  width: 100%;
+}
+
+/* customer column on landing page */
+.home-main {
+  flex: 100%;
+  max-width: 100%;
+  padding: 10px;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 15px;
+  margin-bottom: 25px;
+  margin-top: 15px;
+}
+
+/* standard header layout for all sub pages */
+.full-header {
+  flex: 100%;
+  max-width: 100%;
+  padding: 10px;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 15px;
+  margin-bottom: 25px;
+  margin-top: 15px;
+}
+
+/* gallery image cards */
+.card {
+  position: relative;
+  background-color: rgba(255, 255, 255);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 100%;
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.9);
+  transition: 1s;
+}
+
+.card:hover img {
+  opacity: 0.7;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+/* text for gallery image cards */
+.container {
+  padding: 2px 16px;
+}
+
+/* custom column layout for about page */
+.about-side {
+  flex: 25%;
+  max-width: 25%;
+  padding: 12px;
+}
+
+.about-side img {
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
+}
+
+#about-img {
+  margin-bottom: 30px;
+}
+
+/* custom column layout for about page */
+.about-main {
+  flex: 50%;
+  max-width: 50%;
+  padding: 12px;
+  text-align: left;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 15px;
+  margin-bottom: 25px;
+  margin-top: 15px;
+}
+
+/* custom column layout for blog page */
+.blog-main {
+  flex: 75%;
+  max-width: 75%;
+  padding: 12px;
+}
+
+/* custom column layout for blog page */
+.blog-side {
+  flex: 25%;
+  max-width: 25%;
+  padding: 12px;
+}
+
+/* custom cards for blogs on blog page */
+.blog-card {
+  display: flex;
+  background-color: rgba(255, 255, 255);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
+  margin-bottom: 30px;
+}
+
+.blog-card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.9);
+  transition: 1s;
+}
+
+.blog-card:hover img {
+  opacity: 0.7;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.blog-image {
+  flex: 30%;
+  max-width: 30%;
+  height: 100%;
+  padding: 12px;
+}
+
+.blog-image img {
+  border-radius: 10px;
+}
+ /* text container for blog cards */
+.blog-text {
+  flex: 70%;
+  max-width: 70%;
+  padding: 12px;
+}
+
+/* side card for quick link buttons on blog page */
+.blog-content-bar {
+  margin-bottom: 30px;
+  background-color: rgba(255, 255, 255);
+  padding: 12px;
+}
+
+/* buttons on blog page */
+.blog-button {
+  background-color: #00ff59;
+  border: none;
+  color:black;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+.blog-button:hover {
+  background-color: #333;
+  color: white;
+  transition: 1s;
+}
+
+/* custom column layout for contact page */
+.contact-column {
+  flex: 33.33%;
+  max-width: 33.33%;
+  padding: 12px;
+}
+
+/* contact page cards for contact info */
+.contact-card {
+  background-color: rgba(255, 255, 255);
+  padding: 12px;
+  height: 100%;
+}
+
+/* contact links webfonts container */
+.contact-links {
+  font-size: 40px;
+  text-align: center;
+}
+
+.contact-links a {
+  color: black;
+  padding: 12px;
+}
+
+.contact-links a:hover {
+  color: #00ff59;
+}
+
+/* ask a question form */
+input {
+  width: 100%;
+  height: 35px;
+  padding: 8px;
+}
+
+textarea {
+  width: 100%;
+  padding: 8px;
+}
+
+input[type="submit"] {
+  background-color: #00ff59;
+  border: none;
+  color: black;
+  padding: 10px;
+  text-align: center;
+  font-size: 16px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #333;
+  color: white;
+  transition: 1s;
+}
+
+/* standard footer for all pages */
+.footer {
+  flex: 100%;
+  max-width: 100%;
+  text-align: center;
+  background-color: #333;
+  border-radius: 15px;
+  margin-top: 20px;
+  padding: 1px;
+}
+
+/* Responsive layout - for smaller screens and tablets */
+@media (max-width: 800px) {
+  #home-hidden {
+    display: none;
+  }
+  .home-column {
+    flex: 50%;
+    max-width: 50%;
+  }
+  .text-left h1, .text-right h1 {
+    font-size: 3vw;
+  }
+  .column {
+    flex: 50%;
+    max-width: 50%;
+  }
+  .blog-main {
+    flex: 100%;
+    max-width: 100%;
+  }
+  .blog-side {
+    display: none;
+  }
+  .about-side {
+    display: none;
+  }
+  .about-main {
+    flex: 100%;
+    max-width: 100%;
+  }
+  .contact-column {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - for smart phones */
+@media (max-width: 600px) {
+  .column {
+    flex: 100%;
+    max-width: 100%;
+  }
+  .home-column {
+    flex: 100%;
+    max-width: 100%;
+  }
+  .navbar {
+    flex-direction: column;
+  }
+  #home-hidden {
+    display: none;
+  }
+  .text-left h1, .text-right h1 {
+    font-size: 5vw;
+  }
+  .about-side {
+    display: flex;
+    flex: 100%;
+    max-width: 100%;
+  }
+  .about-main {
+    flex: 100%;
+    max-width: 100%;
+  }
+  #about-img {
+    display: none;
+  }
+  .blog-main {
+    flex: 100%;
+    max-width: 100%;
+  }
+  .blog-side {
+    display: none;
+  }
+  .contact-column {
+    flex: 100%;
+    max-width: 100%;
+  }
+}

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-148588261-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'UA-148588261-1');
+    </script>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Contact</title>
+    <meta name="description" content="Daniel Waller Photography and Design Contact">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/all.css">
+</head>
+
+<body>
+    <!-- wrapper @ 95% width - on all pages -->
+    <div class=wrapper>
+        <!-- flexbox navbar -->
+        <div class="navbar">
+            <a href="index.html">Home</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="blog.html">Blog</a>
+            <a href="about.html">About</a>
+            <a id="active" href="contact.html">Contact</a>
+        </div>
+        <!-- standard flexbox row format for custom column layout -->
+        <div class="row">
+            <!-- Standard full width flexbox header for all pages -->
+            <div class="full-header">
+                <h1>Contact</h1>
+                <h3 style="color:grey">DANIEL WALLER PHOTOGRAPHY AND DESIGN</h3>
+            </div>
+        </div>
+        <!-- standard flexbox row format for custom column layout -->
+        <div class="row">
+            <!-- custom flexbox column for contact page -->
+            <div class="contact-column">
+                <!-- contact card -->
+                <div class="contact-card">
+                    <h3>Contact Address</h3>
+                    <h5 style="color:grey">COME SEE OUR GALLERY</h5>
+                    <p>Duis ac porttitor arcu, consequat fermentum nisi. Cras sodales nisi efficitur dignissim
+                        dignissim. Quisque eget consectetur velit.</p><br>
+                    <!-- contant links container with webfonts and external email link -->
+                    <div class="contact-links">
+                        <a href="mailto:someone@example.com?Subject=Hello%20again" target="_top"><i
+                                class="fas fa-envelope"></i></a>
+                        <a href="https://www.instagram.com"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.facebook.com"><i class="fab fa-facebook"></i></a>
+                        <a href="https://twitter.com"><i class="fab fa-twitter-square"></i></i></a>
+                        <a href="https://nz.linkedin.com"><i class="fab fa-linkedin-in"></i></a>
+                    </div><br>
+                    <h5 style="color:grey">DANIEL WALLER PHOTOGRAPHY AND DESIGN</h5>
+                    <p>Address Line One<br>
+                        Address Line Two<br>
+                        Nelson 7010</p>
+                    <p>Telephone: +64 3 555 5555<br>
+                        Facsimile: +64 3 555 5555</p>
+                </div>
+            </div>
+            <div class="contact-column">
+                <!-- contact card with embeded google map -->
+                <div class="contact-card">
+                    <h3>Map</h3>
+                    <h5 style="color:grey">DIRECTIONS TO US</h5>
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d95939.17354633665!2d173.1960540529206!3d-41.28494602502891!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6d3becc491b72e7d%3A0xa00ef88e796a480!2sNelson!5e0!3m2!1sen!2snz!4v1572253085955!5m2!1sen!2snz"
+                        width="100%" height="300px" frameborder="0" style="border:0;" allowfullscreen="">
+                    </iframe>
+                    <br>
+                    <p style="font-size: 12px;">Sed id maximus est. Vestibulum ante ipsum primis in faucibus orci luctus
+                        et ultrices posuere cubilia Curae; Maecenas cursus sagittis purus in feugiat.</p>
+                </div>
+            </div>
+            <div class="contact-column">
+                <!-- contant card with php echo contact form -->
+                <div class="contact-card">
+                    <h3>Ask a Question</h3>
+                    <h5 style="color:grey">HOW CAN WE HELP YOU?</h5>
+                    <form target="_blank" action="contact-form.php" method="post">
+                        Email:<br>
+                        <input type="email" name="email">
+                        <br>
+                        Subject:<br>
+                        <input type="text" name="subject">
+                        <br><br>
+                        <textarea name="message" rows="10" cols="30" placeholder="Your message here."></textarea>
+                        <br><br>
+                        <input type="submit">
+                        <br>
+                    </form>
+                    <br>
+                </div>
+            </div>
+        </div>
+        <!-- standard footer for all pages -->
+        <div class="footer" style="color: white;">
+            <p> &copy; Daniel Waller 2019</p>
+        </div>
+    </div>
+
+
+
+</body>
+
+</html>

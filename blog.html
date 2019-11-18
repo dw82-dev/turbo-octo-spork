@@ -42,7 +42,7 @@
             <!-- custom flexbox column for blog pages -->
             <div class="blog-main">
                 <!-- blog cards for customer image and content -->
-                <div class="blog-card" onclick="openNav();currentBlog(1)">
+                <div class="blog-card" onclick="openBlog();currentBlog(1)">
                     <div class="blog-image">
                         <img src="images/blog/sblog1.jpg" alt="Typography Image" style="width: 100%">
                     </div>
@@ -58,7 +58,7 @@
                         <button class="button blog-button" style="float: right">Read More</button>
                     </div>
                 </div>
-                <div class="blog-card" onclick="openNav();currentBlog(2)">
+                <div class="blog-card" onclick="openBlog();currentBlog(2)">
                     <div class="blog-image">
                         <img src="images/blog/sblog2.png" alt="Typography Image" style="width: 100%">
                     </div>
@@ -73,7 +73,7 @@
                         <button class="button blog-button" style="float: right">Read More</button>
                     </div>
                 </div>
-                <div class="blog-card" onclick="openNav();currentBlog(3)">
+                <div class="blog-card" onclick="openBlog();currentBlog(3)">
                     <div class="blog-image">
                         <img src="images/blog/sblog3.png" alt="Abstract Colour Design Image" style="width: 100%">
                     </div>
@@ -97,10 +97,10 @@
                     <p style="font-size: 12px;">Sed id maximus est. Vestibulum ante ipsum primis in faucibus orci luctus
                         et ultrices posuere
                         cubilia Curae; Maecenas cursus sagittis purus in feugiat.</p>
-                    <button class="button blog-button" onclick="openNav();currentBlog(1)">Typography
+                    <button class="button blog-button" onclick="openBlog();currentBlog(1)">Typography
                         Photography</button>
-                    <button class="button blog-button" onclick="openNav();currentBlog(2)">Typography Design</button>
-                    <button class="button blog-button" onclick="openNav();currentBlog(3)">Colour and Design</button>
+                    <button class="button blog-button" onclick="openBlog();currentBlog(2)">Typography Design</button>
+                    <button class="button blog-button" onclick="openBlog();currentBlog(3)">Colour and Design</button>
                     <br>
                     <br>
                     <br>
@@ -109,10 +109,10 @@
                     <p style="font-size: 12px;">Sed id maximus est. Vestibulum ante ipsum primis in faucibus orci luctus
                         et ultrices posuere
                         cubilia Curae; Maecenas cursus sagittis purus in feugiat.</p>
-                    <button class="button blog-button" onclick="openNav();currentBlog(1)">Typography</button>
-                    <button class="button blog-button" onclick="openNav();currentBlog(2)">Design</button>
-                    <button class="button blog-button" onclick="openNav();currentBlog(1)">Photography</button>
-                    <button class="button blog-button" onclick="openNav();currentBlog(3)">Colour</button>
+                    <button class="button blog-button" onclick="openBlog();currentBlog(1)">Typography</button>
+                    <button class="button blog-button" onclick="openBlog();currentBlog(2)">Design</button>
+                    <button class="button blog-button" onclick="openBlog();currentBlog(1)">Photography</button>
+                    <button class="button blog-button" onclick="openBlog();currentBlog(3)">Colour</button>
                 </div>
             </div>
         </div>
@@ -124,8 +124,8 @@
 
     </div>
 
-    <div id="myNav" class="overlay">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <div id="myBlog" class="overlay">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeBlog()">&times;</a>
         <div class="overlay-content">
 
             <div class="myBlogs">
@@ -144,22 +144,28 @@
                         arcu, eget convallis nunc elit eu tortor. Ut aliquam lacus id libero cursus, ac bibendum
                         arcu pellentesque. Vestibulum laoreet pulvinar massa a sagittis.</p>
                     <p>Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
-                        Aeneanlaoreet, lacus et dictum mattis, lacus lorem fermentum urna, nec lobortis enim sem vel sem.
+                        Aeneanlaoreet, lacus et dictum mattis, lacus lorem fermentum urna, nec lobortis enim sem vel
+                        sem.
                         Curabitur ut nisi pharetra, sagittis nunc nec, molestie est. In diam orci, mollis ac
-                        hendrerit quis, laoreet id arcu. Praesent cursus sed nisi quis vehicula. Aenean at dui risus. Quisque dolor arcu,
+                        hendrerit quis, laoreet id arcu. Praesent cursus sed nisi quis vehicula. Aenean at dui risus.
+                        Quisque dolor arcu,
                         iaculis sed suscipit eget, cursus non arcu. Sed quis nisl quis metus scelerisque mattis.</p>
                     <p>Ut luctus leo ut eros iaculis laoreet quis eget sapien. Mauris eu purus justo. Nam tristique
                         fringilla viverra. Phasellus consequat mi sed metus porta, id ullamcorper purus convallis.
                         Suspendisse semper semper arcu, vitae dictum lectus commodo in. Morbi semper placerat odio,
                         et pretium tortor pellentesque imperdiet. Duis a mattis metus. Quisque vehicula elementum erat
-                        sit amet volutpat. Nunc rutrum eu erat et tristique. Curabitur magna ipsum, laoreet vitae nisl a,
+                        sit amet volutpat. Nunc rutrum eu erat et tristique. Curabitur magna ipsum, laoreet vitae nisl
+                        a,
                         pellentesque rutrum mauris.</p>
                     <p>Suspendisse iaculis posuere mauris eget maximus. Curabitur tincidunt purus ac est fermentum,
                         nec lacinia ipsum mattis. Integer consectetur, nulla nec semper sagittis, metus enim luctus
-                        arcu, semper ullamcorper eros lectus dictum velit. Quisque volutpat nec purus ac ornare. Nulla iaculis
-                        velit a mauris tempor lacinia. Ut eu sodales risus, id suscipit elit. Suspendisse vulputate, sapien
+                        arcu, semper ullamcorper eros lectus dictum velit. Quisque volutpat nec purus ac ornare. Nulla
+                        iaculis
+                        velit a mauris tempor lacinia. Ut eu sodales risus, id suscipit elit. Suspendisse vulputate,
+                        sapien
                         ac blandit elementum, sapien arcu ultrices nunc, vitae ultrices quam sem id purus. Quisque
-                        ornare consectetur neque, id sodales magna iaculis ut. Nunc massa erat, consequat tincidunt mi eu,
+                        ornare consectetur neque, id sodales magna iaculis ut. Nunc massa erat, consequat tincidunt mi
+                        eu,
                         ullamcorper mattis quam.</p>
                 </div>
             </div>
@@ -247,20 +253,18 @@
                         ullamcorper mattis quam.</p>
                 </div>
             </div>
-
         </div>
-
-
-
     </div>
 
     <script>
-        function openNav() {
-            document.getElementById("myNav").style.display = "block";
+
+        // JavaScript for blog
+        function openBlog() {
+            document.getElementById("myBlog").style.display = "block";
         }
 
-        function closeNav() {
-            document.getElementById("myNav").style.display = "none";
+        function closeBlog() {
+            document.getElementById("myBlog").style.display = "none";
         }
 
         var blogIndex = 1;
@@ -282,9 +286,7 @@
             blogs[blogIndex - 1].style.display = "flex";
         }
 
-
     </script>
-
 
 </body>
 

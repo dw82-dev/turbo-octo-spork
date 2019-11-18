@@ -40,7 +40,7 @@
 
 .close:hover,
 .close:focus {
-  color: #999;
+  color: #00ff59;
   text-decoration: none;
   cursor: pointer;
 }
@@ -55,6 +55,10 @@
   display: block;
   margin-left: auto;
   margin-right: auto;
+}
+
+.cursor {
+  cursor: pointer;
 }
 
 /* Next & previous buttons */
@@ -84,7 +88,7 @@
 /* On hover, add a black background color with a little bit see-through */
 .prev:hover,
 .next:hover {
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(255, 255, 255, 0.4);
 }
 
 /* Number text (1/3 etc) */
@@ -104,19 +108,10 @@
   color: white;
 }
 
-img.thumbs {
+.thumbs {
   opacity: 0.6;
 }
 
-.active,
-.thumbs:hover {
+.active, .thumbs:hover {
   opacity: 1;
-}
-
-img.hover-shadow {
-  transition: 0.3s;
-}
-
-.hover-shadow:hover {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
